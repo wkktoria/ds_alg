@@ -3,7 +3,7 @@
 #include <vector>
 
 namespace alg {
-int BinarySearch(std::vector<int> &elements, const int target) {
+int BinarySearch(const std::vector<int> &elements, const int target) {
   std::size_t left{0};
   std::size_t right{elements.size() - 1};
 
