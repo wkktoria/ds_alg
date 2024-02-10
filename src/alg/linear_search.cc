@@ -20,15 +20,15 @@ namespace {
 using alg::LinearSearch;
 
 TEST(LinearSearchTest, FindIndexOfTargetValue) {
-  std::vector elements{1, 2, 4, 8, 16, 32, 64, 128};
-  auto result{LinearSearch(elements, 16)};
+  const std::vector elements{1, 2, 4, 8, 16, 32, 64, 128};
+  const auto result{LinearSearch(elements, 16)};
 
   EXPECT_EQ(4, result.value());
 }
 
 TEST(LinearSearchTest, ReturnProperValueWhenTargetValueIsNotFound) {
-  std::vector elements{1, 2, 4, 8, 16, 32, 64, 128};
-  auto result{LinearSearch(elements, 222)};
+  const std::vector elements{1, 2, 4, 8, 16, 32, 64, 128};
+  const auto result{LinearSearch(elements, 222)};
 
   EXPECT_EQ(std::nullopt, result);
 }

@@ -27,7 +27,7 @@ TEST(InsertionSortTest, SortElementsInAscendingOrder) {
   std::vector<int> elements{16, 4, 32, 2, 1, 128, 8, 64};
   InsertionSort(elements);
 
-  std::vector<int> expected{1, 2, 4, 8, 16, 32, 64, 128};
+  const std::vector<int> expected{1, 2, 4, 8, 16, 32, 64, 128};
   EXPECT_EQ(elements, expected);
 }
 } // namespace
