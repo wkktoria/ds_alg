@@ -1,10 +1,12 @@
+#pragma once
+
 #include <cstddef>
 #include <gtest/gtest.h>
 #include <utility>
 #include <vector>
 
 namespace alg {
-template <typename T> void SelectionSort(std::vector<T> &elements) {
+template <typename T> inline void SelectionSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size() - 1; ++i) {
     std::size_t min_index{i};
 
@@ -20,15 +22,3 @@ template <typename T> void SelectionSort(std::vector<T> &elements) {
   }
 }
 } // namespace alg
-
-namespace {
-using alg::SelectionSort;
-
-TEST(SelectionSortTest, SortElementsInAscendingOrder) {
-  std::vector<int> elements{16, 4, 32, 2, 1, 128, 8, 64};
-  SelectionSort(elements);
-
-  const std::vector<int> expected{1, 2, 4, 8, 16, 32, 64, 128};
-  EXPECT_EQ(elements, expected);
-}
-} // namespace

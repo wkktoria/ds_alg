@@ -10,6 +10,6 @@ add_library(${PROJECT_NAME} INTERFACE)
 target_compile_options(${PROJECT_NAME} INTERFACE -Wall -Wpedantic -Wextra)
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
 
-add_subdirectory(src)
+add_subdirectory(${PROJECT_NAME})
 
 include(CTest)
