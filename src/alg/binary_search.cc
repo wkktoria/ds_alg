@@ -3,8 +3,9 @@
 #include <vector>
 
 namespace alg {
-std::optional<std::size_t> BinarySearch(const std::vector<int> &elements,
-                                        const int target) {
+template <typename T>
+std::optional<std::size_t> BinarySearch(const std::vector<T> &elements,
+                                        const T target) {
   std::size_t left{0};
   std::size_t right{elements.size() - 1};
 

@@ -4,7 +4,7 @@
 #include <vector>
 
 namespace alg {
-void InsertionSort(std::vector<int> &elements) {
+template <typename T> void InsertionSort(std::vector<T> &elements) {
   std::size_t i{1};
 
   while (i < elements.size()) {

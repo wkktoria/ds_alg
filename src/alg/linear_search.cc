@@ -3,8 +3,9 @@
 #include <vector>
 
 namespace alg {
-std::optional<std::size_t> LinearSearch(const std::vector<int> &elements,
-                                        const int target) {
+template <typename T>
+std::optional<std::size_t> LinearSearch(const std::vector<T> &elements,
+                                        const T target) {
   for (std::size_t i{0}; i < elements.size(); ++i) {
     if (elements.at(i) == target) {
       return i;

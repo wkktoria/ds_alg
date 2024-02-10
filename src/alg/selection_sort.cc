@@ -4,7 +4,7 @@
 #include <vector>
 
 namespace alg {
-void SelectionSort(std::vector<int> &elements) {
+template <typename T> void SelectionSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size() - 1; ++i) {
     std::size_t min_index{i};
 
