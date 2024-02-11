@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstddef>
-#include <gtest/gtest.h>
+#include <optional>
 #include <vector>
 
 namespace alg {
