@@ -4,6 +4,7 @@
   - [Binary search](#binary-search)
   - [Linear search](#linear-search)
 - [Sorting algorithms](#sorting-algorithms)
+  - [Bubble sort](#bubble-sort)
   - [Insertion sort](#insertion-sort)
   - [Selection sort](#selection-sort)
 
@@ -31,6 +32,16 @@ Time complexity: $O(n)$
 Space complexity: $O(1)$
 
 ## Sorting algorithms
+
+### Bubble sort
+
+Bubble sort repeatedly steps through the input array element by element, comparing the current element with the one after it, swapping their values if needed. These passes through the array are repeated until no swaps have to be performed during a pass, meaning the array has become fully sorted.
+
+Time complexity: $O(n^2)$
+
+Space complexity: $O(1)$
+
+![Bubble sort visualization](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 ### Insertion sort
 

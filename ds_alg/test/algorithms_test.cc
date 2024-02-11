@@ -1,4 +1,5 @@
 #include "binary_search.h"
+#include "bubble_sort.h"
 #include "insertion_sort.h"
 #include "linear_search.h"
 #include "selection_sort.h"
@@ -9,6 +10,7 @@
 
 namespace {
 using alg::BinarySearch;
+using alg::BubbleSort;
 using alg::InsertionSort;
 using alg::LinearSearch;
 using alg::SelectionSort;
@@ -32,6 +34,13 @@ TEST(BinarySearchTest, ReturnProperValueWhenTargetValueIsNotFound) {
       BinarySearch(kSortedIntegerElements, non_existing_target_value)};
 
   EXPECT_EQ(result, expected_value);
+}
+
+TEST(BubbleSortTest, SortIntegerElementsInAscendingOrder) {
+  auto elements{kIntegerElements};
+  BubbleSort(elements);
+
+  EXPECT_EQ(elements, kSortedIntegerElements);
 }
 
 TEST(InsertionSortTest, SortIntegerElementsInAscendingOrder) {
