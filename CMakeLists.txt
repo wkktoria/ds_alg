@@ -11,5 +11,6 @@ target_compile_options(${PROJECT_NAME} INTERFACE -Wall -Wpedantic -Wextra)
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
 
 add_subdirectory(${PROJECT_NAME})
+add_subdirectory(${PROJECT_NAME}/executables)
 
 include(CTest)
