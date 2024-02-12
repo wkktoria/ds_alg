@@ -21,3 +21,12 @@ Run visualizations:
 ```console
 ./build/ds_alg/executables/[algorithm]_visualizer
 ```
+
+## Implemented visualizations
+
+### Bubble sort
+
+- [algorithm](ds_alg/include/alg/bubble_sort.h)
+- [visualization](ds_alg/executables/bubble_sort_visualizer.cc)
+
+![Bubble sort visualization](gifs/bubble_sort.gif)
