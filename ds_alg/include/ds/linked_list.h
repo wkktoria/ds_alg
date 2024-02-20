@@ -1,6 +1,7 @@
 #pragma once
 
 #include <algorithm>
+#include <cstddef>
 #include <iostream>
 #include <memory>
 
@@ -55,7 +56,7 @@ public:
     }
   }
 
-  inline unsigned int size() { return size_; }
+  inline std::size_t size() { return size_; }
 
 private:
   struct Node {
@@ -66,6 +67,6 @@ private:
   };
 
   std::unique_ptr<Node> head_{nullptr};
-  unsigned int size_{0};
+  std::size_t size_{0};
 };
 } // namespace ds
