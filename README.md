@@ -2,7 +2,7 @@
 
 My implementations of data structures and algorithms in C++.
 
-## Build and run tests
+## Build and run
 
 Build:
 
