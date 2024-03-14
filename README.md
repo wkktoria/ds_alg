@@ -4,6 +4,8 @@ My implementations of data structures and algorithms in C++.
 
 ## Build and run
 
+:warning: Installation of some X11 libraries may be required to build it.
+
 Build:
 
 ```console
