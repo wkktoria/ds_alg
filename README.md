@@ -21,21 +21,29 @@ ctest --test-dir build/ds_alg/test --output-on-failure
 Run visualizations:
 
 UNIX:
+
 ```console
 ./build/ds_alg/executables/[algorithm]_visualizer
 ```
 
 Windows:
+
 ```console
 .\build\ds_alg\executables\Debug\[algorithm]_visualizer.exe
 ```
-
 
 ## Implemented visualizations
 
 ### Bubble sort
 
 - [algorithm](ds_alg/include/alg/bubble_sort.h)
-- [visualization](ds_alg/executables/bubble_sort_visualizer.cc)
+- [visualizer](ds_alg/executables/bubble_sort_visualizer.cc)
 
 ![Bubble sort visualization](gifs/bubble_sort.gif)
+
+## Insertion sort
+
+- [algorithm](ds_alg/include/alg/insertion_sort.h)
+- [visualizer](ds_alg/executables/insertion_sort_visualizer.cc)
+
+![Insertion sort visualization](gifs/insertion_sort.gif)
