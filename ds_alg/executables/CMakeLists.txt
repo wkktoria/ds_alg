@@ -17,3 +17,6 @@ FetchContent_MakeAvailable(raylib_cpp)
 
 add_executable(bubble_sort_visualizer bubble_sort_visualizer.cc)
 target_link_libraries(bubble_sort_visualizer PRIVATE raylib raylib_cpp)
+
+add_executable(insertion_sort_visualizer insertion_sort_visualizer.cc)
+target_link_libraries(insertion_sort_visualizer PRIVATE raylib raylib_cpp)
