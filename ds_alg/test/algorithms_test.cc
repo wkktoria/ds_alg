@@ -1,12 +1,14 @@
+#include <gtest/gtest.h>
+
+#include <cstddef>
+#include <optional>
+#include <vector>
+
 #include "binary_search.h"
 #include "bubble_sort.h"
 #include "insertion_sort.h"
 #include "linear_search.h"
 #include "selection_sort.h"
-#include <cstddef>
-#include <gtest/gtest.h>
-#include <optional>
-#include <vector>
 
 namespace {
 using alg::BinarySearch;
@@ -17,7 +19,7 @@ using alg::SelectionSort;
 
 const std::vector kIntegerElements{16, 4, 32, 2, 1, 128, 8, 64};
 const std::vector kSortedIntegerElements{1, 2, 4, 8, 16, 32, 64, 128};
-} // namespace
+}  // namespace
 
 TEST(BinarySearchTest, FindIndexOfIntegerTargetValue) {
   const int target_value{16};

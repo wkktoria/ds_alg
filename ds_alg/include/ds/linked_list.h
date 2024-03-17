@@ -6,8 +6,9 @@
 #include <memory>
 
 namespace ds {
-template <typename T> class LinkedList {
-public:
+template <typename T>
+class LinkedList {
+ public:
   LinkedList() = default;
   ~LinkedList() = default;
 
@@ -58,7 +59,7 @@ public:
 
   inline std::size_t size() { return size_; }
 
-private:
+ private:
   struct Node {
     std::unique_ptr<Node> next{nullptr};
     T data{};
@@ -69,4 +70,4 @@ private:
   std::unique_ptr<Node> head_{nullptr};
   std::size_t size_{0};
 };
-} // namespace ds
+}  // namespace ds

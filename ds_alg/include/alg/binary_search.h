@@ -6,8 +6,8 @@
 
 namespace alg {
 template <typename T>
-[[nodiscard]] inline std::optional<std::size_t>
-BinarySearch(const std::vector<T> &elements, const T target) {
+[[nodiscard]] inline std::optional<std::size_t> BinarySearch(
+    const std::vector<T> &elements, const T target) {
   std::size_t left{0};
   std::size_t right{elements.size() - 1};
 
@@ -25,4 +25,4 @@ BinarySearch(const std::vector<T> &elements, const T target) {
 
   return {};
 }
-} // namespace alg
+}  // namespace alg

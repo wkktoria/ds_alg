@@ -1,9 +1,9 @@
-#include "raylib-cpp.hpp"
 #include <algorithm>
 #include <chrono>
 #include <iterator>
 #include <optional>
 #include <random>
+#include <raylib-cpp.hpp>
 #include <thread>
 #include <utility>
 #include <vector>
@@ -12,7 +12,7 @@ namespace {
 constexpr int kScreenWidth{300};
 constexpr int kScreenHeight{300};
 constexpr int kNumberOfBars{50};
-} // namespace
+}  // namespace
 
 void DrawBars(const std::vector<int> &bars,
               std::optional<int> selected_bar = std::nullopt) {

@@ -5,7 +5,8 @@
 #include <vector>
 
 namespace alg {
-template <typename T> inline void InsertionSort(std::vector<T> &elements) {
+template <typename T>
+inline void InsertionSort(std::vector<T> &elements) {
   std::size_t i{1};
 
   while (i < elements.size()) {
@@ -19,4 +20,4 @@ template <typename T> inline void InsertionSort(std::vector<T> &elements) {
     ++i;
   }
 }
-} // namespace alg
+}  // namespace alg

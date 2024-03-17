@@ -5,7 +5,8 @@
 #include <vector>
 
 namespace alg {
-template <typename T> inline void BubbleSort(std::vector<T> &elements) {
+template <typename T>
+inline void BubbleSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size(); ++i) {
     for (std::size_t j{0}; j < elements.size() - i - 1; ++j) {
       if (elements.at(j) > elements.at(j + 1)) {
@@ -14,4 +15,4 @@ template <typename T> inline void BubbleSort(std::vector<T> &elements) {
     }
   }
 }
-} // namespace alg
+}  // namespace alg

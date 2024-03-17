@@ -1,6 +1,7 @@
-#include "linked_list.h"
-#include "gtest/gtest.h"
 #include <gtest/gtest.h>
+
+#include "gtest/gtest.h"
+#include "linked_list.h"
 
 namespace {
 using ds::LinkedList;

@@ -5,7 +5,8 @@
 #include <vector>
 
 namespace alg {
-template <typename T> inline void SelectionSort(std::vector<T> &elements) {
+template <typename T>
+inline void SelectionSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size() - 1; ++i) {
     std::size_t min_index{i};
 
@@ -20,4 +21,4 @@ template <typename T> inline void SelectionSort(std::vector<T> &elements) {
     }
   }
 }
-} // namespace alg
+}  // namespace alg
