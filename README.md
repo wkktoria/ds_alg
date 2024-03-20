@@ -47,3 +47,10 @@ Windows:
 - [visualizer](ds_alg/executables/insertion_sort_visualizer.cc)
 
 ![Insertion sort visualization](gifs/insertion_sort.gif)
+
+## Selection sort
+
+- [algorithm](ds_alg/include/alg/selection_sort.h)
+- [visualizer](ds_alg/executables/selection_sort_visualizer.cc)
+
+![Selection visualization](gifs/selection_sort.gif)
