@@ -20,3 +20,6 @@ target_link_libraries(bubble_sort_visualizer PRIVATE raylib raylib_cpp)
 
 add_executable(insertion_sort_visualizer insertion_sort_visualizer.cc)
 target_link_libraries(insertion_sort_visualizer PRIVATE raylib raylib_cpp)
+
+add_executable(selection_sort_visualizer selection_sort_visualizer.cc)
+target_link_libraries(selection_sort_visualizer PRIVATE raylib raylib_cpp)
