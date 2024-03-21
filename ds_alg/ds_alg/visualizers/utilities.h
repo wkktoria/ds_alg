@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <random>
 #include <raylib-cpp.hpp>
+#include <optional>
 #include <vector>
 
 #include "constants.h"
