@@ -9,13 +9,13 @@ My implementations of data structures and algorithms in C++.
 Build:
 
 ```console
-cmake -S . -B build && cmake --build build 
+cmake -S ds_alg -B build && cmake --build build 
 ```
 
 Run tests:
 
 ```console
-ctest --test-dir build/ds_alg/test --output-on-failure 
+ctest --test-dir build/test --output-on-failure
 ```
 
 Run visualizations:
@@ -23,13 +23,13 @@ Run visualizations:
 UNIX:
 
 ```console
-./build/ds_alg/executables/[algorithm]_visualizer
+./build/executables/[algorithm]_visualizer
 ```
 
 Windows:
 
 ```console
-.\build\ds_alg\executables\Debug\[algorithm]_visualizer.exe
+.\build\executables\Debug\[algorithm]_visualizer.exe
 ```
 
 ## Implemented visualizations

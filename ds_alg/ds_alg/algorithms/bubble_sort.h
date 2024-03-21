@@ -4,7 +4,8 @@
 #include <utility>
 #include <vector>
 
-namespace alg {
+namespace ds_alg {
+namespace algorithms {
 template <typename T>
 inline void BubbleSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size(); ++i) {
@@ -15,4 +16,5 @@ inline void BubbleSort(std::vector<T> &elements) {
     }
   }
 }
-}  // namespace alg
+}  // namespace algorithms
+}  // namespace ds_alg

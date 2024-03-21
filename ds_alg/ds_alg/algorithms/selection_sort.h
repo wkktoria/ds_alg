@@ -4,7 +4,8 @@
 #include <utility>
 #include <vector>
 
-namespace alg {
+namespace ds_alg {
+namespace algorithms {
 template <typename T>
 inline void SelectionSort(std::vector<T> &elements) {
   for (std::size_t i{0}; i < elements.size() - 1; ++i) {
@@ -21,4 +22,5 @@ inline void SelectionSort(std::vector<T> &elements) {
     }
   }
 }
-}  // namespace alg
+}  // namespace algorithms
+}  // namespace ds_alg

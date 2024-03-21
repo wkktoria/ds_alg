@@ -4,7 +4,8 @@
 #include <utility>
 #include <vector>
 
-namespace alg {
+namespace ds_alg {
+namespace algorithms {
 template <typename T>
 inline void InsertionSort(std::vector<T> &elements) {
   std::size_t i{1};
@@ -20,4 +21,5 @@ inline void InsertionSort(std::vector<T> &elements) {
     ++i;
   }
 }
-}  // namespace alg
+}  // namespace algorithms
+}  // namespace ds_alg

@@ -1,25 +1,24 @@
+#include <ds_alg/algorithms/binary_search.h>
+#include <ds_alg/algorithms/bubble_sort.h>
+#include <ds_alg/algorithms/insertion_sort.h>
+#include <ds_alg/algorithms/linear_search.h>
+#include <ds_alg/algorithms/selection_sort.h>
 #include <gtest/gtest.h>
 
 #include <cstddef>
 #include <optional>
-#include <vector>
 
-#include "binary_search.h"
-#include "bubble_sort.h"
-#include "insertion_sort.h"
-#include "linear_search.h"
-#include "selection_sort.h"
+#include "constants.h"
 
-namespace {
-using alg::BinarySearch;
-using alg::BubbleSort;
-using alg::InsertionSort;
-using alg::LinearSearch;
-using alg::SelectionSort;
-
-const std::vector kIntegerElements{16, 4, 32, 2, 1, 128, 8, 64};
-const std::vector kSortedIntegerElements{1, 2, 4, 8, 16, 32, 64, 128};
-}  // namespace
+namespace ds_alg_test {
+namespace algorithms_test {
+using ds_alg::algorithms::BinarySearch;
+using ds_alg::algorithms::BubbleSort;
+using ds_alg::algorithms::InsertionSort;
+using ds_alg::algorithms::LinearSearch;
+using ds_alg::algorithms::SelectionSort;
+using ds_alg_test::constants::kIntegerElements;
+using ds_alg_test::constants::kSortedIntegerElements;
 
 TEST(BinarySearchTest, FindIndexOfIntegerTargetValue) {
   const int target_value{16};
@@ -74,3 +73,5 @@ TEST(SelectionSort, SortIntegerElementsInAscendingOrder) {
 
   EXPECT_EQ(elements, kSortedIntegerElements);
 }
+}  // namespace algorithms_test
+}  // namespace ds_alg_test

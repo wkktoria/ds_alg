@@ -4,7 +4,8 @@
 #include <optional>
 #include <vector>
 
-namespace alg {
+namespace ds_alg {
+namespace algorithms {
 template <typename T>
 [[nodiscard]] inline std::optional<std::size_t> BinarySearch(
     const std::vector<T> &elements, const T target) {
@@ -25,4 +26,5 @@ template <typename T>
 
   return {};
 }
-}  // namespace alg
+}  // namespace algorithms
+}  // namespace ds_alg

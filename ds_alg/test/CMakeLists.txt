@@ -10,12 +10,10 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 add_executable(algorithms_test algorithms_test.cc)
-target_include_directories(algorithms_test PRIVATE ../include/alg)
-target_link_libraries(algorithms_test PRIVATE GTest::gtest_main ds_alg)
+target_link_libraries(algorithms_test PRIVATE GTest::gtest_main algorithms ${PROJECT_NAME})
 
 add_executable(data_structures_test data_structures_test.cc)
-target_include_directories(data_structures_test PRIVATE ../include/ds)
-target_link_libraries(data_structures_test PRIVATE GTest::gtest_main ds_alg)
+target_link_libraries(data_structures_test PRIVATE GTest::gtest_main data_structures ${PROJECT_NAME})
 
 include(GoogleTest)
 gtest_discover_tests(algorithms_test)

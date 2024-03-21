@@ -5,7 +5,8 @@
 #include <iostream>
 #include <memory>
 
-namespace ds {
+namespace ds_alg {
+namespace data_structures {
 template <typename T>
 class LinkedList {
  public:
@@ -70,4 +71,5 @@ class LinkedList {
   std::unique_ptr<Node> head_{nullptr};
   std::size_t size_{0};
 };
-}  // namespace ds
+}  // namespace data_structures
+}  // namespace ds_alg
