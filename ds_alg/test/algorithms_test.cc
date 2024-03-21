@@ -11,14 +11,7 @@
 #include "constants.h"
 
 namespace ds_alg_test {
-namespace algorithms_test {
-using ds_alg::algorithms::BinarySearch;
-using ds_alg::algorithms::BubbleSort;
-using ds_alg::algorithms::InsertionSort;
-using ds_alg::algorithms::LinearSearch;
-using ds_alg::algorithms::SelectionSort;
-using ds_alg_test::constants::kIntegerElements;
-using ds_alg_test::constants::kSortedIntegerElements;
+using namespace ds_alg::algorithms;
 
 TEST(BinarySearchTest, FindIndexOfIntegerTargetValue) {
   const int target_value{16};
@@ -73,5 +66,4 @@ TEST(SelectionSort, SortIntegerElementsInAscendingOrder) {
 
   EXPECT_EQ(elements, kSortedIntegerElements);
 }
-}  // namespace algorithms_test
 }  // namespace ds_alg_test

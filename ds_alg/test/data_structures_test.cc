@@ -2,8 +2,7 @@
 #include <gtest/gtest.h>
 
 namespace ds_alg_test {
-namespace data_strucutes_test {
-using ds_alg::data_structures::LinkedList;
+using namespace ds_alg::data_structures;
 
 TEST(LinkedListTest, ReturnValidSizeOfList) {
   LinkedList<int> linked_list{};
@@ -75,5 +74,4 @@ TEST(LinkedListTest, DeleteFewElementsFromList) {
   linked_list.Print();
   EXPECT_EQ(testing::internal::GetCapturedStdout(), "3 4 ");
 }
-}  // namespace data_strucutes_test
 }  // namespace ds_alg_test
