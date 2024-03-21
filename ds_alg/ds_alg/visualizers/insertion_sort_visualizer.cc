@@ -1,17 +1,20 @@
+#include <ds_alg/visualizers/insertion_sort_visualizer.h>
+
 #include <algorithm>
-#include <chrono>
+#include <cstddef>
 #include <raylib-cpp.hpp>
 #include <thread>
-#include <utility>
 #include <vector>
 
 #include "constants.h"
 #include "utilities.h"
 
+namespace ds_alg {
+namespace visualizers {
 void InsertionSortVisualization(std::vector<int> &bars) {
   std::size_t i{1};
 
-  while (i < kNumberOfBars) {
+  while (static_cast<int>(i) < kNumberOfBars) {
     std::size_t j{i};
 
     while (j > 0 && bars.at(j - 1) > bars.at(j)) {
@@ -31,7 +34,7 @@ void InsertionSortVisualization(std::vector<int> &bars) {
   }
 }
 
-int main() {
+void RunInsertionSortVisualizer() {
   raylib::Window window(kScreenWidth, kScreenHeight,
                         "Insertion Sort Visualization");
   window.SetTargetFPS(60);
@@ -47,6 +50,6 @@ int main() {
 
     EndDrawing();
   }
-
-  return 0;
 }
+}  // namespace visualizers
+}  // namespace ds_alg

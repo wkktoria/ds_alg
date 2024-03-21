@@ -1,13 +1,14 @@
+#include <ds_alg/visualizers/selection_sort_visualizer.h>
+
 #include <algorithm>
-#include <chrono>
-#include <raylib-cpp.hpp>
+#include <cstddef>
 #include <thread>
-#include <utility>
-#include <vector>
 
 #include "constants.h"
 #include "utilities.h"
 
+namespace ds_alg {
+namespace visualizers {
 void SelectionSortVisualization(std::vector<int> &bars) {
   for (std::size_t i{0}; i < bars.size() - 1; ++i) {
     std::size_t min_index{i};
@@ -31,7 +32,7 @@ void SelectionSortVisualization(std::vector<int> &bars) {
   }
 }
 
-int main() {
+void RunSelectionSortVisualizer() {
   raylib::Window window(kScreenWidth, kScreenHeight,
                         "Selection Sort Visualization");
   window.SetTargetFPS(60);
@@ -47,6 +48,6 @@ int main() {
 
     EndDrawing();
   }
-
-  return 0;
 }
+}  // namespace visualizers
+}  // namespace ds_alg

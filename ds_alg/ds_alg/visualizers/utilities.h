@@ -1,14 +1,14 @@
 #pragma once
 
 #include <algorithm>
-#include <iterator>
-#include <optional>
 #include <random>
 #include <raylib-cpp.hpp>
 #include <vector>
 
 #include "constants.h"
 
+namespace ds_alg {
+namespace visualizers {
 inline void DrawBars(const std::vector<int> &bars,
                      std::optional<int> selected_bar = std::nullopt) {
   int width{kScreenWidth / kNumberOfBars};
@@ -38,3 +38,5 @@ inline void DrawBars(const std::vector<int> &bars,
 
   return bars;
 }
+}  // namespace visualizers
+}  // namespace ds_alg

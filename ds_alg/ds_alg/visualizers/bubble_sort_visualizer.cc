@@ -1,13 +1,15 @@
+#include <ds_alg/visualizers/bubble_sort_visualizer.h>
+
 #include <algorithm>
-#include <chrono>
 #include <raylib-cpp.hpp>
 #include <thread>
-#include <utility>
 #include <vector>
 
 #include "constants.h"
 #include "utilities.h"
 
+namespace ds_alg {
+namespace visualizers {
 void BubbleSortVisualization(std::vector<int> &bars) {
   for (auto i{0}; i < kNumberOfBars; ++i) {
     for (auto j{0}; j < kNumberOfBars - i - 1; ++j) {
@@ -25,7 +27,7 @@ void BubbleSortVisualization(std::vector<int> &bars) {
   }
 }
 
-int main() {
+void RunBubbleSortVisualizer() {
   raylib::Window window(kScreenWidth, kScreenHeight,
                         "Bubble Sort Visualization");
   window.SetTargetFPS(60);
@@ -41,6 +43,6 @@ int main() {
 
     EndDrawing();
   }
-
-  return 0;
 }
+}  // namespace visualizers
+}  // namespace ds_alg
