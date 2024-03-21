@@ -23,34 +23,34 @@ Run visualizations:
 UNIX:
 
 ```console
-./build/executables/[algorithm]_visualizer
+./build/executables/[algorithm]_visualization
 ```
 
 Windows:
 
 ```console
-.\build\executables\Debug\[algorithm]_visualizer.exe
+.\build\executables\Debug\[algorithm]_visualization.exe
 ```
 
 ## Implemented visualizations
 
 ### Bubble sort
 
-- [algorithm](ds_alg/include/alg/bubble_sort.h)
-- [visualizer](ds_alg/executables/bubble_sort_visualizer.cc)
+- [algorithm](ds_alg/ds_alg/algorithms/bubble_sort.h)
+- [visualizer](ds_alg/ds_alg/visualizers/bubble_sort_visualizer.cc)
 
 ![Bubble sort visualization](gifs/bubble_sort.gif)
 
 ## Insertion sort
 
-- [algorithm](ds_alg/include/alg/insertion_sort.h)
-- [visualizer](ds_alg/executables/insertion_sort_visualizer.cc)
+- [algorithm](ds_alg/ds_alg/algorithms/insertion_sort.h)
+- [visualizer](ds_alg/ds_alg/visualizers/insertion_sort_visualizer.cc)
 
 ![Insertion sort visualization](gifs/insertion_sort.gif)
 
 ## Selection sort
 
-- [algorithm](ds_alg/include/alg/selection_sort.h)
-- [visualizer](ds_alg/executables/selection_sort_visualizer.cc)
+- [algorithm](ds_alg/ds_alg/algorithms/selection_sort.h)
+- [visualizer](ds_alg/ds_alg/visualizers/selection_sort_visualizer.cc)
 
 ![Selection visualization](gifs/selection_sort.gif)
