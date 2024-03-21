@@ -1,6 +1,6 @@
 # ds_alg
 
-My implementations of data structures and algorithms in C++.
+My implementations and visualizations of data structures and algorithms in C++.
 
 ## Build and run
 
