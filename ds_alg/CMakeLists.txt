@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14..3.26)
-project(ds_alg VERSION 0.1
-               DESCRIPTION "Data structures and algorithms implementations"
+project(ds_alg VERSION 0.2
+               DESCRIPTION "Data structures and algorithms implementations and visuailzations"
                LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
