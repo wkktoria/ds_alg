@@ -2,9 +2,10 @@
 
 #include <algorithm>
 #include <cstddef>
+#include <raylib-cpp.hpp>
 #include <thread>
+#include <vector>
 
-#include "constants.h"
 #include "utilities.h"
 
 namespace ds_alg {
@@ -29,24 +30,6 @@ void SelectionSortVisualization(std::vector<int> &bars) {
 
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
-  }
-}
-
-void RunSelectionSortVisualizer() {
-  raylib::Window window(kScreenWidth, kScreenHeight,
-                        "Selection Sort Visualization");
-  window.SetTargetFPS(60);
-
-  auto bars{CreateBars()};
-
-  while (!window.ShouldClose()) {
-    BeginDrawing();
-    ClearBackground(BLACK);
-
-    SelectionSortVisualization(bars);
-    DrawBars(bars);
-
-    EndDrawing();
   }
 }
 }  // namespace visualizers

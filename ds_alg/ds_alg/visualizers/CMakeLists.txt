@@ -21,6 +21,6 @@ if(NOT raylib_cpp_FOUND)
     FetchContent_MakeAvailable(raylib_cpp)
 endif()
 
-add_library(visualizers bubble_sort_visualizer.cc insertion_sort_visualizer.cc selection_sort_visualizer.cc)
+add_library(visualizers bubble_sort_visualizer.cc insertion_sort_visualizer.cc selection_sort_visualizer.cc utilities.cc)
 target_link_libraries(visualizers PUBLIC ${PROJECT_NAME})
 target_link_libraries(visualizers PRIVATE raylib raylib_cpp)

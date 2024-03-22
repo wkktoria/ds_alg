@@ -6,7 +6,6 @@
 #include <thread>
 #include <vector>
 
-#include "constants.h"
 #include "utilities.h"
 
 namespace ds_alg {
@@ -14,7 +13,7 @@ namespace visualizers {
 void InsertionSortVisualization(std::vector<int> &bars) {
   std::size_t i{1};
 
-  while (static_cast<int>(i) < kNumberOfBars) {
+  while (i < bars.size()) {
     std::size_t j{i};
 
     while (j > 0 && bars.at(j - 1) > bars.at(j)) {
@@ -31,24 +30,6 @@ void InsertionSortVisualization(std::vector<int> &bars) {
     }
 
     ++i;
-  }
-}
-
-void RunInsertionSortVisualizer() {
-  raylib::Window window(kScreenWidth, kScreenHeight,
-                        "Insertion Sort Visualization");
-  window.SetTargetFPS(60);
-
-  auto bars{CreateBars()};
-
-  while (!window.ShouldClose()) {
-    BeginDrawing();
-    ClearBackground(BLACK);
-
-    InsertionSortVisualization(bars);
-    DrawBars(bars);
-
-    EndDrawing();
   }
 }
 }  // namespace visualizers
