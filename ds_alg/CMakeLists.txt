@@ -10,6 +10,8 @@ add_library(${PROJECT_NAME} INTERFACE)
 
 if(UNIX)
     target_compile_options(${PROJECT_NAME} INTERFACE -Wall -Wpedantic -Wextra)
+elseif(MSVC)
+    target_compile_options(${PROJECT_NAME} INTERFACE /W4 /Wall)
 endif()
 
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
